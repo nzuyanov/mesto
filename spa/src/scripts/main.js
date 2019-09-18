@@ -1,3 +1,5 @@
+import "../pages/index.css";
+
 const api = new Api({
   baseUrl: 'http://95.216.175.5/cohort2',
   headers: {
