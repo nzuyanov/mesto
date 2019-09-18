@@ -1,0 +1,10 @@
+@import url(./_container/popup__image_container.css);
+@import url(./_background/popup__image_background.css);
+@import url(./_is-opened/popup__image_is-opened.css);
+
+.popup__image {
+    position: relative;
+    min-width: 430px;
+    min-height: 360px;
+    display: none;
+}

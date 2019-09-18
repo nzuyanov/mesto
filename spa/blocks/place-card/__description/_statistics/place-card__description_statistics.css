@@ -1,0 +1,6 @@
+.place-card__description_statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}

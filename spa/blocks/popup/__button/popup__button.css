@@ -1,0 +1,12 @@
+@import url("./_plus/popup__button_plus.css");
+@import url("./_save/popup__button_save.css");
+@import url("./_disabled/popup__button_disabled.css");
+@import url("./_enabled/popup__button_enabled.css");
+
+.popup__button {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  margin-top: 48px;
+  font-size: 18px;
+}
