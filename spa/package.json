@@ -7,7 +7,7 @@
   "scripts": {
     "build": "SET NODE_ENV=production & rimraf dist && webpack --mode production",
     "dev": "SET NODE_ENV=development & webpack-dev-server --mode development --open --watch",
-    "deploy": "SET cross-env NODE_ENV=production & gh-pages -d dist"
+    "deploy": "SET NODE_ENV=production & gh-pages -d dist"
   },
   "author": "Nikita Zuyanov",
   "license": "MIT",
