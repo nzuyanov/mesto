@@ -14,6 +14,13 @@
     line-height: 14px;
 }
 
+@media screen and (max-width: 980px) {
+  .user-info__button_edit {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
   .user-info__button_edit:hover {
     background-color: white;
     color: black;
