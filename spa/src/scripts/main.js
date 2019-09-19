@@ -5,9 +5,11 @@ import { Popup } from "./classes/popup.js"
 
 export { cardLikedBy, userIsCardOwner, api, cardsContainer, modalPopup }
 
+const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort2' : 'https://praktikum.tk/cohort2';
+
 const api = new Api({
   //baseUrl: 'http://95.216.175.5/cohort2',
-  baseUrl: 'https://praktikum.tk/cohort2',
+  baseUrl: serverUrl,
   headers: {
     authorization: '2a5289af-b41b-41a4-8b1f-ca258824d071',
     'Content-Type': 'application/json'

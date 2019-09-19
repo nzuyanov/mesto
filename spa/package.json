@@ -1,11 +1,12 @@
 {
   "name": "spa",
   "version": "1.0.0",
-  "description": "",
+  "description": "nice spa via javascript",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && webpack --mode production",
-    "dev": "webpack-dev-server --mode development --open --watch"
+    "build": "SET NODE_ENV=production & rimraf dist && webpack --mode production",
+    "dev": "SET NODE_ENV=development & webpack-dev-server --mode development --open --watch",
+    "deploy": "SET cross-env NODE_ENV=production & gh-pages -d dist"
   },
   "author": "Nikita Zuyanov",
   "license": "MIT",
@@ -31,6 +32,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "core-js": "^3.1.4"
+    "core-js": "^3.1.4",
+    "cross-env": "^6.0.0"
   }
 }
