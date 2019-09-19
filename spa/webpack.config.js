@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const ghpages = require('gh-pages');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
