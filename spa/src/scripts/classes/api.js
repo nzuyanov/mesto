@@ -1,3 +1,5 @@
+export { Api }
+
 class Api {
   constructor({baseUrl, headers}) {
     this.url = baseUrl;

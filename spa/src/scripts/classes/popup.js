@@ -1,3 +1,5 @@
+export { Popup }
+
 class Popup {
   open(type, event) {
     switch (type) {

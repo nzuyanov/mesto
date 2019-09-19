@@ -1,4 +1,9 @@
 import "../pages/index.css";
+import { Api } from "./classes/api.js";
+import { CardList } from "./classes/cardlist.js"
+import { Popup } from "./classes/popup.js"
+
+export { cardLikedBy, userIsCardOwner, api, cardsContainer }
 
 const api = new Api({
   baseUrl: 'http://95.216.175.5/cohort2',
@@ -284,4 +289,4 @@ document.forms.avatar.addEventListener('submit', handleUserAvatar);
 document.forms.avatar.addEventListener('input', handleUserAvatarInput);
 
 refreshData();
-let keepAlive = setInterval(refreshData, 5000);
+//let keepAlive = setInterval(refreshData, 5000);
