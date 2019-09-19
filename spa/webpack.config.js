@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const ghpages = require('gh-pages');
+const ASSET_PATH = process.env.ASSET_PATH || './';
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -9,6 +9,7 @@ const isDev = process.env.NODE_ENV === 'development';
 module.exports = {
     entry: { main: './src/scripts/main.js' },
     output: {
+        publicPath: ASSET_PATH,
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[chunkhash].js'
     },
@@ -32,7 +33,7 @@ module.exports = {
             {
                 test: /\.(png|jpg|gif|ico|svg)$/,
                 use: [
-                     'file-loader?name=../dist/images/[name].[ext]',
+                     'file-loader?name=./images/[name].[ext]',
                      {
                          loader: 'image-webpack-loader',
                          options: { }
@@ -66,6 +67,9 @@ module.exports = {
         new WebpackMd5Hash(),
         new webpack.DefinePlugin({
             'NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-       })
+       }),
+       new webpack.DefinePlugin({
+        'process.env.ASSET_PATH': JSON.stringify(ASSET_PATH)
+      })
     ]
 };
