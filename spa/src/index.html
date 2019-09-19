@@ -28,7 +28,7 @@
 
     <div class="popup">
       <div class="popup__content">
-        <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close popup__close_content">
+        <img src="<%=require('./images/close.svg')%>" alt="close logo" class="popup__close popup__close_content">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" name="new">
             <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Название">
@@ -38,7 +38,7 @@
       </div>
 
       <div class="popup__info">
-         <img src="./images/close.svg" alt="" class="popup__close popup__close_info">
+         <img src="<%=require('./images/close.svg')%>" alt="close logo" class="popup__close popup__close_info">
           <h3 class="popup__title">Редактировать профиль</h3>
             <form class="popup__form" name="userInfo">
                 <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Имя">
@@ -50,14 +50,14 @@
       </div>
 
       <div class="popup__image">
-          <img src="./images/close.svg" alt="" class="popup__close popup__close_image">
+          <img src="<%=require('./images/close.svg')%>" alt="close logo" class="popup__close popup__close_image">
           <div class="popup__image_container">
             <img class="popup__image_background" alt="popup_image">
           </div> 
       </div>
 
       <div class="popup__avatar">
-        <img src="./images/close.svg" alt="" class="popup__close popup__close_avatar">
+        <img src="<%=require('./images/close.svg')%>" alt="close logo" class="popup__close popup__close_avatar">
         <h3 class="popup__title">Обновить аватар</h3>
         <form class="popup__form" name="avatar">
             <input type="text" name="link" class="popup__input popup__input_type_name" placeholder="Ссылка на аватар">
@@ -68,13 +68,6 @@
     </div>
 
   </div>
-  <!---
-  <script src="./scripts/classes/api.js"></script>
-  <script src="./scripts/classes/card.js"></script>
-  <script src="./scripts/classes/cardlist.js"></script>
-  <script src="./scripts/classes/popup.js"></script>
-  <script src="./scripts/main.js"></script>
-  --->
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>
