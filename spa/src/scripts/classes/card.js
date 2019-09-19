@@ -1,5 +1,5 @@
 export { Card }
-import { cardsContainer, api } from "../main.js";
+import { cardsContainer, api, modalPopup } from "../main.js";
 
 class Card{
     constructor(name, link, likeNumber, ownerPerms){

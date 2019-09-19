@@ -3,10 +3,11 @@ import { Api } from "./classes/api.js";
 import { CardList } from "./classes/cardlist.js"
 import { Popup } from "./classes/popup.js"
 
-export { cardLikedBy, userIsCardOwner, api, cardsContainer }
+export { cardLikedBy, userIsCardOwner, api, cardsContainer, modalPopup }
 
 const api = new Api({
-  baseUrl: 'http://95.216.175.5/cohort2',
+  //baseUrl: 'http://95.216.175.5/cohort2',
+  baseUrl: 'https://praktikum.tk/cohort2',
   headers: {
     authorization: '2a5289af-b41b-41a4-8b1f-ca258824d071',
     'Content-Type': 'application/json'
