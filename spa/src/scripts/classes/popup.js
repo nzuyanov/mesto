@@ -1,3 +1,5 @@
+export { Popup }
+
 class Popup {
   open(type, event) {
     switch (type) {
@@ -23,7 +25,7 @@ class Popup {
         document.querySelector('.popup__avatar').classList.add('popup__avatar_is-opened');
         break;
       default:
-        console.log('Unexpected popup type');
+        console.log('Error: unexpected popup type');
         break;
     }
   }

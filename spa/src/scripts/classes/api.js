@@ -1,3 +1,5 @@
+export { Api }
+
 class Api {
   constructor({baseUrl, headers}) {
     this.url = baseUrl;
@@ -32,7 +34,6 @@ class Api {
   }
 
   postNewCard(name, link) {
-    console.log(this);
     return fetch(`${this.url}/cards`, {
       method: 'POST',
       headers: this.headers,

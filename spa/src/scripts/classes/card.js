@@ -1,3 +1,6 @@
+export { Card }
+import { cardsContainer, api, modalPopup } from "../main.js";
+
 class Card{
     constructor(name, link, likeNumber, ownerPerms){
       this.cardElement = this.create(name, link, likeNumber, ownerPerms);
